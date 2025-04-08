@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <div class="container px-4">
+            <!-- Header -->
+            <div class="w-full space-y-8 text-center md:text-center info">
+                <h1 class="text-6xl font-bold font-bold  golden-base golden3"> Welcome to Magic Quill 🪶 </h1>
+            </div>
+
+            
+
+
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <% books.forEach(book => { %>
+    <div>
+        <img src="<%= book.cover %>" alt="<%= book.title %> cover" class=" w-full max-w-xs h-auto mb-4" />
+    </div>
+    <% }); %>
+</div>
+
+
+
+
+
+           
+    </div>
+    
+    
+</body>
+</html>

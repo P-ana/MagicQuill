@@ -7,9 +7,9 @@ This is my first web app made using API! It shows a list of Harry Potter books u
 
 Fetches and displays Harry Potter books
 
-Uses an external API (HP API)
+Uses an external API 
 
-Simple and clean UI with CSS
+Simple UI with CSS
 
 # Tech Stack
 
